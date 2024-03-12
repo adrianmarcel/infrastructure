@@ -1,10 +1,9 @@
 module "prod" {
     source = "../../infra"
 
-    nome_repositorio = "production"
-    cluster_name = "production"
+    cluster_name = "prod"
 }
 
-output "endereco" {
-    value = module.prod.URL
+output "IP_db" {
+    value = module.prod.IP
 }

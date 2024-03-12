@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "infradevtools"
-    key    = "Homolog/terraform.tfstate"
+    key    = "Dev/terraform.tfstate"
     region = "us-west-2"
   }
 }
